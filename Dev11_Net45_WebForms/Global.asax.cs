@@ -6,6 +6,7 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Security;
 using Dev11_Net45_WebForms;
+using PortableClassLibrary1;
 
 namespace Dev11_Net45_WebForms
 {
@@ -16,6 +17,8 @@ namespace Dev11_Net45_WebForms
             // Code that runs on application startup
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterOpenAuth();
+
+            Class1.Fib4();
         }
 
         void Application_End(object sender, EventArgs e)
